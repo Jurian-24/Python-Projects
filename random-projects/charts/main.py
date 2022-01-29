@@ -13,10 +13,5 @@ data = ['2', '6' , '4']
 
 labels = ['Januari', 'Februari', 'Maart']
 
-# charts = [LineChart(data, labels, 'testChart')]
-
 LineChart(data, labels).createChart()
 plt.show()
-
-
-# print(charts[0]); print('completed')

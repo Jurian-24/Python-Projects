@@ -8,6 +8,3 @@ class LineChart:
 
     def createChart(self):
         plt.plot(self.labels, self.data)
-
-    # def __repr__(self):
-    #     return self.createChart()
