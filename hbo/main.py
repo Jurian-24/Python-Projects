@@ -16,11 +16,11 @@ while counter < 9:
     if(letter in word):
         for i in word:
             if(i == letter):
-                good_letters.append(letter)
                 for index in range(len(word)):
                     if word[index] == letter:
                         wordlist[index] = letter
-                print(wordlist)
+                good_letters.append(letter) if letter not in good_letters else print('Deze letter zit er al in!')
+        print(wordlist)
         if(len(good_letters) == word_length):
             print(player_two + ' heeft gewonnen!')
             sys.exit()
