@@ -158,41 +158,41 @@ jurian.width(2)
 jurian.pencolor(random.choice(colors))
 window.bgcolor('black')
 
-# def shape(angle, side, limit):
-#     reverseDirection = 300
-#     jurian.forward(side)
-
-#     if side % (reverseDirection*2) == 0:
-#         angle = angle + 2
-#         print(side)
-#     elif side % reverseDirection == 0:
-#         angle = angle - 2
-#         print(side)
-    
-#     jurian.right(angle)
-#     side = side + 2
-#     if side < limit:
-#         shape(angle, side, limit)
-    
-# angle = 119
-# side = 90
-# limit = 1000
-# shape(angle, side, limit)
-
-def circle(diameter, angle, limit):
+def shape(angle, side, limit):
     reverseDirection = 300
-    jurian.forward(diameter)
-    diameter = diameter - 1
-    if diameter % (reverseDirection*2) == 0:
-        angle = angle - 2
-    elif diameter % reverseDirection == 0:
-        angle = angle + 2
+    jurian.forward(side)
 
-    jurian.right(angle)
-    diameter = diameter + 4
-    jurian.circle(diameter)
+    if side % (reverseDirection*2) == 0:
+        angle = angle + 2
+        print(side)
+    elif side % reverseDirection == 0:
+        angle = angle - 2
+        print(side)
     
-    circle(diameter, angle, limit)
+    jurian.right(angle)
+    side = side + 2
+    if side < limit:
+        shape(angle, side, limit)
+    
+angle = 119
+side = 90
+limit = 1000
+shape(angle, side, limit)
+
+# def circle(diameter, angle, limit):
+#     reverseDirection = 300
+#     jurian.forward(diameter)
+#     diameter = diameter - 1
+#     if diameter % (reverseDirection*2) == 0:
+#         angle = angle - 2
+#     elif diameter % reverseDirection == 0:
+#         angle = angle + 2
+
+#     jurian.right(angle)
+#     diameter = diameter + 4
+#     jurian.circle(diameter)
+    
+#     circle(diameter, angle, limit)
 
 
 
